@@ -5,7 +5,8 @@ export type GetTokenV1Input = {
 }
 
 export type GetTokenV1Output = {
-    access_token: string;
+    accessToken: string;
+    expiresAt: string;
 	source: string;
 }
 
