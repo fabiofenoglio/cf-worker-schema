@@ -1,9 +1,13 @@
-export interface Input {
+export type Input = {
     key: string;
     auth: string;
 }
 
-export interface Output {
+export type Output = {
     access_token: string;
 	source: string;
+}
+
+export interface OdAuthProviderService {
+    getToken(input: Input): Promise<Output>;
 }
