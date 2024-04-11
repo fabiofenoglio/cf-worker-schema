@@ -4,8 +4,9 @@
     "private": true,
     "scripts": {},
     "devDependencies": {
-      "typescript": "^5.3.2"
+        "typescript": "^5.3.2"
     },
-    "dependencies": {}
-  }
-  
+    "dependencies": {
+        "@cloudflare/workers-types": "^4.20240405.0"
+    }
+}
