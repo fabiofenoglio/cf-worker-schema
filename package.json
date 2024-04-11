@@ -1,0 +1,11 @@
+{
+    "name": "cf-worker-schema",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {},
+    "devDependencies": {
+      "typescript": "^5.3.2"
+    },
+    "dependencies": {}
+  }
+  
