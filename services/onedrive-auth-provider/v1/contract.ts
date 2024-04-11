@@ -1,14 +1,14 @@
 
-export type Input = {
+export type GetTokenV1Input = {
     key: string;
     auth: string;
 }
 
-export type Output = {
+export type GetTokenV1Output = {
     access_token: string;
 	source: string;
 }
 
 export interface OnedriveAuthProviderServiceContract {
-    getToken(input: Input): Promise<Output>;
+    getTokenV1(input: GetTokenV1Input): Promise<GetTokenV1Output>;
 }
