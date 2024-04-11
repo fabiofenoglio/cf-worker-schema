@@ -1,4 +1,3 @@
-import { WorkerEntrypoint } from "cloudflare:workers";
 
 export type Input = {
     key: string;
@@ -12,9 +11,4 @@ export type Output = {
 
 export interface OnedriveAuthProviderServiceContract {
     getToken(input: Input): Promise<Output>;
-}
-
-
-export declare class OnedriveAuthProviderServiceStub extends WorkerEntrypoint implements OnedriveAuthProviderServiceContract {
-	getToken(input: Input): Promise<Output>;
 }

@@ -1,12 +1,10 @@
 {
     "name": "cf-worker-schema",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "private": true,
     "scripts": {},
     "devDependencies": {
         "typescript": "^5.3.2"
     },
-    "dependencies": {
-        "@cloudflare/workers-types": "^4.20240405.0"
-    }
+    "dependencies": {}
 }
