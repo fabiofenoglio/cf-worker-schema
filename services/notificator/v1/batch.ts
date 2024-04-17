@@ -17,16 +17,16 @@ export type SendNotificationV1Input = {
 
 export type SendNotificationV1Output = {
     type: 'email';
-    notification: SendEmailV1Output;
+    result: SendEmailV1Output;
 } | {
     type: 'system/email';
-    notification: SendSystemNotificationEmailV1Output;
+    result: SendSystemNotificationEmailV1Output;
 } | {
     type: 'telegram';
-    notification: SendTelegramMessageV1Output;
+    result: SendTelegramMessageV1Output;
 } | {
     type: 'system/telegram';
-    notification: SendSystemNotificationTelegramMessageV1Output;
+    result: SendSystemNotificationTelegramMessageV1Output;
 };
 
 export type SendNotificationV1FailureOutput = {
