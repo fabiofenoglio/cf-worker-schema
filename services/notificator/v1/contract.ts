@@ -10,4 +10,7 @@ export interface NotificatorServiceContract {
   sendSystemNotificationTelegramMessageV1(input: SendSystemNotificationTelegramMessageV1Input): Promise<SendSystemNotificationTelegramMessageV1Output>;
 
   sendBatchedNotificationsV1(input: SendNotificationV1Input[]): Promise<SendNotificationV1Output[]>
+
+  // LEGACY
+  sendSystemNotificationV1(input: SendSystemNotificationEmailV1Input): Promise<SendSystemNotificationEmailV1Output>;
 }
