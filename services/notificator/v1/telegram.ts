@@ -4,6 +4,9 @@ export type SendTelegramMessageV1Input = {
     to: string;
     text?: string;
     html?: string;
+	disableNotification?: boolean;
+    parseMode?: string;
+    replyToMessageId?: string;
 }
 
 export type SendTelegramMessageV1Output = {
@@ -15,6 +18,9 @@ export type SendSystemNotificationTelegramMessageV1Input = {
     to?: string;
     text?: string;
     html?: string;
+	disableNotification?: boolean;
+    parseMode?: string;
+    replyToMessageId?: string;
 }
 
 export type SendSystemNotificationTelegramMessageV1Output = {
