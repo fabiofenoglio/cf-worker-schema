@@ -28,3 +28,27 @@ export type SendNotificationV1Output = {
     type: 'system/telegram';
     notification: SendSystemNotificationTelegramMessageV1Output;
 };
+
+export type SendNotificationV1FailureOutput = {
+    type: 'email';
+    error: any;
+} | {
+    type: 'system/email';
+    error: any;
+} | {
+    type: 'telegram';
+    error: any;
+} | {
+    type: 'system/telegram';
+    error: any;
+};
+
+export type SendBatchedNotificationsV1Input = {
+    notifications: SendNotificationV1Input[];
+}
+
+export type SendBatchedNotificationsV1Output = {
+    numberOfSent: number;
+    numberOfFailures: number;
+    results: (SendNotificationV1Output | SendNotificationV1FailureOutput)[];
+}
