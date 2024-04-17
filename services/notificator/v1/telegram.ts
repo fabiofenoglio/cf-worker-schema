@@ -10,7 +10,7 @@ export type SendTelegramMessageV1Input = {
 }
 
 export type SendTelegramMessageV1Output = {
-    sent: true;
+    messageId: string;
 }
 
 export type SendSystemNotificationTelegramMessageV1Input = {
@@ -24,5 +24,5 @@ export type SendSystemNotificationTelegramMessageV1Input = {
 }
 
 export type SendSystemNotificationTelegramMessageV1Output = {
-    sent: true;
+    messageId: string;
 }
