@@ -16,7 +16,7 @@ export type SendEmailV1Input = {
 }
 
 export type SendEmailV1Output = {
-  sent: true;
+  messageId: string;
 }
 
 export type SendSystemNotificationEmailV1Input = {
@@ -35,5 +35,5 @@ export type SendSystemNotificationEmailV1Input = {
 }
 
 export type SendSystemNotificationEmailV1Output = {
-  sent: true;
+  messageId: string;
 }
