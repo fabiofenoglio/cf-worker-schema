@@ -12,6 +12,7 @@ export type AuthenticateTokenV1ParsedAccessToken = {
 export type AuthenticateTokenV1Input = {
     domain: string;
     token: string;
+    requirements?: AuthenticateTokenV1InputVerificationRequirements;
 }
 
 export type AuthenticateTokenV1Output = {
@@ -20,4 +21,9 @@ export type AuthenticateTokenV1Output = {
 } | {
     valid: false;
     reason: string;
+}
+
+export type AuthenticateTokenV1InputVerificationRequirements = {
+    requiredAudiences?: string[];
+    requiredPermissions?: string[];
 }
