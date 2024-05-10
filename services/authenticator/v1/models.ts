@@ -34,7 +34,6 @@ export type GetIdentityV1Input = {
 }
 
 export type GetIdentityV1Output = {
-    subject: string;
     email: string;
     emailVerified?: boolean;
     givenName?: string;
