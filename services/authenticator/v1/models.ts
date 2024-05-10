@@ -27,3 +27,29 @@ export type AuthenticateTokenV1InputVerificationRequirements = {
     requiredAudiences?: string[];
     requiredPermissions?: string[];
 }
+
+export type GetIdentityV1Input = {
+    domain: string;
+    token: string;
+}
+
+export type GetIdentityV1Output = {
+    subject: string;
+    email: string;
+    emailVerified?: boolean;
+    givenName?: string;
+    familyName?: string;
+    middleName?: string;
+    preferredUsername?: string;
+    nickname?: string;
+    name?: string;
+    profile?: string;
+    picture?: string;
+    website?: string;
+    locale?: string;
+    gender?: string;
+    birthdate?: string;
+    zoneinfo?: string;
+    phoneNumber?: string;
+    phoneNumberVerified?: boolean;
+}
